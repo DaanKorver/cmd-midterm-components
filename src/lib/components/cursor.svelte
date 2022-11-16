@@ -11,10 +11,9 @@
 		transition-timing-function: ease-out;
 		border-radius: 50%;
 		pointer-events: none;
-		/* Commented these out so you can see the cursor. In a real application you need these values to hide the cursor by default. */
-
-		/* left: -50px; */
-		/* top: 0; */
+		/* Comment these out to hide the cursor. */
+		left: -50px;
+		top: 0;
 		top: 1rem;
 		z-index: 999;
 		visibility: visible;
