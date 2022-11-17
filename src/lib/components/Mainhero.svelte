@@ -2,29 +2,25 @@
 	export let title;
 	export let text;
 	export let image;
-    import "../styles/global.css";
+	import '../styles/global.css';
 </script>
 
 <section>
-	<!-- <img src="/assets/hero-image.jpeg" alt="woman with laptop" /> -->
 	<h2>Communication<br /> and Multimedia<br /> Design</h2>
-        <img src="/assets/hero-image.jpeg" alt="woman with laptop" />
-        <p>Midterm</p>
-        <p>Currulicum 2022-2024</p>
+	<img src="/assets/hero-image.jpeg" alt="woman with laptop" />
+	<p>Midterm</p>
+	<p>Currulicum 2022-2024</p>
 </section>
 
-
 <style>
-
 	section {
 		display: flex;
 		flex-direction: column;
-        align-items: flex-start;
+		align-items: flex-start;
 		border-bottom: 4px solid #000;
-        gap: 1em;
-        padding-bottom: 2em;
+		gap: 1em;
+		padding-bottom: 2em;
 		margin: 0.4em 2.5em;
-     
 	}
 
 	section :nth-child(3) {
@@ -48,7 +44,6 @@
 	img {
 		max-width: 100%;
 		height: auto;
-		
 	}
 	@media (min-width: 40em) {
 		h2 {
@@ -56,15 +51,13 @@
 		}
 	}
 
-	
 	@media (min-width: 70em) {
 		section {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-           justify-content: center;
-           gap: 2em;
-			/* border-bottom: 4px solid #000; */
+			justify-content: center;
+			gap: 2em;
 			padding-bottom: 5em;
 			margin: 0.4em 6em;
 		}
@@ -82,15 +75,13 @@
 			color: white;
 		}
 
-
 		img {
-            position: absolute;
-            transform: translateX(20%);
-            max-width: 50em;
-            margin: 11em;
-            margin-top: 11em;
-            padding-bottom: 3em;
-    
+			position: absolute;
+			transform: translateX(20%);
+			max-width: 50em;
+			margin: 11em;
+			margin-top: 11em;
+			padding-bottom: 3em;
 		}
 
 		h2 {
