@@ -1,5 +1,8 @@
 <footer>
-	<span>© 2022 CMD AMSTERDAM</span>
+	<span>
+		<slot/>
+		© 2022 CMD AMSTERDAM
+	</span>
 </footer>
 
 <style>
