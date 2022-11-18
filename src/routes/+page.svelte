@@ -1,11 +1,11 @@
-<script>
-	import TitleTextAsset from '$lib/components/TitleTextAsset.svelte';
+  import TitleTextAsset from '$lib/components/TitleTextAsset.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Cursor from '$lib/components/Cursor.svelte';
 	import ChapterContent from '$lib/components/ChapterContent.svelte';
 	import Mainhero from '$lib/components/Mainhero.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
+  import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <Cursor />
@@ -27,3 +27,5 @@
 <ChapterContent />
 
 <Carousel />
+
+<Footer />
