@@ -3,6 +3,7 @@
 	export let text;
 	export let image;
 	import '../styles/global.css';
+	import '../styles/theme.css';
 </script>
 
 <section>
@@ -21,12 +22,18 @@
 		gap: 1em;
 		padding-bottom: 2em;
 		margin: 0.4em 2.5em;
+		background-color: var(--color-cmd-yellow);
 	}
 
-	section :nth-child(3) {
+	section:nth-child(3) {
 		font-size: 1em;
 		font-weight: bold;
 	}
+
+	h2 {
+		color: var(--color-black);
+	}
+
 	p {
 		font-size: 1em;
 		margin: 0.4em 0.1em;
@@ -38,7 +45,6 @@
 		transition: 0.4s cubic-bezier(0.4, 0.4, 0, 1);
 		padding-top: 0.2em;
 		font-size: 2.5em;
-		z-index: -2;
 	}
 
 	img {
