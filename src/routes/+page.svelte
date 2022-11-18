@@ -3,4 +3,4 @@
 
 </script>
 
-<Carousel></Carousel>
+<Carousel/>
