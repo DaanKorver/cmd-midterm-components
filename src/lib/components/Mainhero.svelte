@@ -11,6 +11,7 @@
 	<img src="/assets/hero-image.jpeg" alt="woman with laptop" />
 	<p>Midterm</p>
 	<p>Currulicum 2022-2024</p>
+	<hr>
 </section>
 
 <style>
@@ -18,12 +19,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		border-bottom: 4px solid #000;
 		gap: 1em;
+		padding: 1rem;
 		padding-bottom: 2em;
-		margin: 0.4em 2.5em;
 		background-color: var(--color-cmd-yellow);
 	}
+
 
 	section:nth-child(3) {
 		font-size: 1em;
@@ -63,9 +64,9 @@
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: center;
-			gap: 2em;
+			gap: 1.5em;
+			padding: 2rem 5rem;
 			padding-bottom: 5em;
-			margin: 0.4em 6em;
 		}
 
 		section :nth-child(3) {
