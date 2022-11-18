@@ -2,43 +2,25 @@
 	<section>
 		<a href="/">1.0 Beoogde leerresultaten</a>
 		<ul>
-			<li>1.01 Humanity-centered digital designers</li>
-			<li>1.02 Competenties</li>
-			<li>1.03 Werkveld en maatschappij</li>
-			<li>1.04 Ontwikkelingen</li>
-			<li>1.05 Ambities en dilemma’s</li>
+			<li><slot/></li>
 		</ul>
 	</section>
 	<section>
 		<a href="/">2.0 Onderwijsleeromgeving</a>
 		<ul>
-			<li>2.01 Onderwijsvisie en didactiek</li>
-			<li>2.02 Curriculumopbouw</li>
-			<li>2.03 Borging onderwijskwaliteit</li>
-			<li>2.04 Onderwijs en praktijk</li>
-			<li>2.05 Onderwijs en onderzoek</li>
-			<li>2.06 Internationalisering</li>
-			<li>2.07 Studenten begeleiding</li>
-			<li>2.08 Digitale en analoge voorzieningen</li>
-			<li>2.09 Ambities en dilemma's</li>
+			<li><slot/></li>
 		</ul>
 	</section>
 	<section>
 		<a href="/">3.0 Toetsing</a>
 		<ul>
-			<li>3.01 Toetsbeleid en -plan</li>
-			<li>3.02 Toetsprogramma en -praktijk</li>
-			<li>3.03 Toetsing en feedback</li>
-			<li>3.04 Borging en kwaliteit</li>
-			<li>3.05 Ambities en dilemma's</li>
+			<li><slot/></li>
 		</ul>
 	</section>
 	<section>
 		<a href="/">4.0 Gerealiseerde leerresultaten</a>
 		<ul>
-			<li>4.01 Afstudeerproces</li>
-			<li>4.02 Borging afstudeerniveau vanuit examencommissie</li>
-			<li>4.03 Ambities en dilemma's</li>
+			<li><slot/></li>d
 		</ul>
 	</section>
 </section>
