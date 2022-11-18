@@ -5,13 +5,21 @@
 	export let imageAlt;
 	import '../styles/global.css';
 	import '../styles/theme.css';
+	export let hasButtons;
 </script>
 
 <section>
 	<h2>{title}</h2>
 	<img src="{image}" alt="{imageAlt}" />
-	<p>Midterm</p>
-	<p>Currulicum 2022-2024</p>
+
+	{#if text}
+	<p>{text}</p>
+	{/if}
+
+	{#if hasButtons}
+	<span>Midterm</span>
+	<span>Currulicum 2022-2024</span>
+	{/if}
 	<hr>
 </section>
 
@@ -37,12 +45,16 @@
 		width: 65%; 
 	}
 
-	p {
+	span {
 		font-size: 1em;
 		margin: 0.4em 0.1em;
 		padding: 1em 3em;
 		background-color: black;
 		color: white;
+	}
+
+	p {
+		font-weight: 100;
 	}
 	h2 {
 		transition: 0.4s cubic-bezier(0.4, 0.4, 0, 1);
@@ -76,7 +88,7 @@
 			font-weight: bold;
 		}
 
-		p {
+		span {
 			font-size: 1.1em;
 			margin: 0.5em;
 			padding: 1em 1.5em;
