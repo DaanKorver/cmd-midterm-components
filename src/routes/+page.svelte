@@ -4,6 +4,7 @@
 	import Link from '$lib/components/Link.svelte';
 	import Cursor from '$lib/components/Cursor.svelte';
 	import ChapterContent from '$lib/components/ChapterContent.svelte';
+	import FooterList from '$lib/components/FooterList.svelte';
 </script>
 
 <Cursor />
@@ -20,3 +21,4 @@
 />
 
 <ChapterContent />
+<FooterList />
