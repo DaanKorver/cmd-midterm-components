@@ -2,13 +2,14 @@
 	export let title;
 	export let text;
 	export let image;
+	export let imageAlt;
 	import '../styles/global.css';
 	import '../styles/theme.css';
 </script>
 
 <section>
-	<h2>Communication<br /> and Multimedia<br /> Design</h2>
-	<img src="/assets/hero-image.jpeg" alt="woman with laptop" />
+	<h2>{title}</h2>
+	<img src="{image}" alt="{imageAlt}" />
 	<p>Midterm</p>
 	<p>Currulicum 2022-2024</p>
 	<hr>
@@ -33,6 +34,7 @@
 
 	h2 {
 		color: var(--color-black);
+		width: 65%; 
 	}
 
 	p {
