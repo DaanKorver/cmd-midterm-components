@@ -1,5 +1,5 @@
 <script>
-    import FloatNavigation from "../lib/components/Float-navigation.svelte";
+    import FloatNavigation from "../lib/components/Float-Navigation.svelte";
 </script>
 <!-- 
 <h1>Welcome to your library project</h1>
