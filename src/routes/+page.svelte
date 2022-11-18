@@ -5,6 +5,7 @@
 	import Cursor from '$lib/components/Cursor.svelte';
 	import ChapterContent from '$lib/components/ChapterContent.svelte';
 	import Mainhero from '$lib/components/Mainhero.svelte';
+	import Carousel from '$lib/components/Carousel.svelte';
 </script>
 
 <Cursor />
@@ -24,3 +25,5 @@
 />
 
 <ChapterContent />
+
+<Carousel />
