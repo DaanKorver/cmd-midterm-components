@@ -6,6 +6,7 @@
 	import Mainhero from '$lib/components/Mainhero.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import FooterList from '$lib/components/FooterList.svelte';
 </script>
 
 <Cursor />
@@ -27,5 +28,7 @@
 <ChapterContent />
 
 <Carousel />
+
+<FooterList />
 
 <Footer />
