@@ -2,25 +2,25 @@
 	<section>
 		<a href="/">1.0 Beoogde leerresultaten</a>
 		<ul>
-			<li><slot /></li>
+			<slot />
 		</ul>
 	</section>
 	<section>
 		<a href="/">2.0 Onderwijsleeromgeving</a>
 		<ul>
-			<li><slot /></li>
+			<slot />
 		</ul>
 	</section>
 	<section>
 		<a href="/">3.0 Toetsing</a>
 		<ul>
-			<li><slot /></li>
+			<slot />
 		</ul>
 	</section>
 	<section>
 		<a href="/">4.0 Gerealiseerde leerresultaten</a>
 		<ul>
-			<li><slot /></li>
+			<slot />
 		</ul>
 	</section>
 </section>
