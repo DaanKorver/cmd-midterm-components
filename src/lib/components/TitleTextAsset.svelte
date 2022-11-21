@@ -16,10 +16,9 @@
 
 <style>
 	.container {
-		max-width: 85rem;
 		display: flex;
 		gap: 2rem;
-		margin: 0 auto;
+		margin: 5rem auto;
 		justify-content: center;
 		line-height: 1.7;
 	}
@@ -45,12 +44,6 @@
 
 		img {
 			max-width: 100%;
-		}
-	}
-
-	@media (max-width: 40rem) {
-		.container {
-			padding: 0 1rem;
 		}
 	}
 </style>

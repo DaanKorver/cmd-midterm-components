@@ -27,7 +27,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin: 0;
-		padding: 1rem 5rem;
+		padding: 1rem 0;
 		box-sizing: border-box;
 		position: relative;
 	}
@@ -35,11 +35,9 @@
 	nav::after {
 		content: '';
 		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
 		bottom: 0;
 		height: 4px;
-		width: calc(100% - 10rem);
+		width: 100%;
 		background-color: #000;
 	}
 
@@ -100,14 +98,6 @@
 	@media (max-width: 45rem) {
 		nav.active {
 			color: white;
-		}
-
-		nav {
-			padding: 1rem 1rem;
-		}
-
-		nav::after {
-			width: calc(100% - 2rem);
 		}
 
 		ul {

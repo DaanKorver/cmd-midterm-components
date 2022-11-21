@@ -7,11 +7,6 @@
 <style>
 	p {
 		margin: 0;
-	}
-
-	@media (min-width: 45rem) {
-		p {
-			width: 80%;
-		}
+		max-width: 40em;
 	}
 </style>

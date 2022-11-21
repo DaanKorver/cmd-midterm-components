@@ -13,6 +13,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		transform: translateY(calc(-1.5rem - 6px));
 	}
 
 	span {
@@ -22,6 +23,8 @@
 		display: inline-block;
 		margin-bottom: -2px;
 		border: 2px solid #000;
+		width: 1.5rem;
+		height: 1.5rem;
 	}
 
 	h3 {

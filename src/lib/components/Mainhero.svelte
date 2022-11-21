@@ -10,17 +10,17 @@
 
 <section>
 	<h2>{title}</h2>
-	<img src="{image}" alt="{imageAlt}" />
+	<img src={image} alt={imageAlt} />
 
 	{#if text}
-	<p>{text}</p>
+		<p>{text}</p>
 	{/if}
 
 	{#if hasButtons}
-	<span>Midterm</span>
-	<span>Currulicum 2022-2024</span>
+		<span>Midterm</span>
+		<span>Currulicum 2022-2024</span>
 	{/if}
-	<hr>
+	<hr />
 </section>
 
 <style>
@@ -29,11 +29,10 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 1em;
-		padding: 1rem;
 		padding-bottom: 2em;
 		background-color: var(--color-cmd-yellow);
+		position: relative;
 	}
-
 
 	section:nth-child(3) {
 		font-size: 1em;
@@ -42,7 +41,7 @@
 
 	h2 {
 		color: var(--color-black);
-		width: 65%; 
+		width: 65%;
 	}
 
 	span {
@@ -79,7 +78,6 @@
 			align-items: flex-start;
 			justify-content: center;
 			gap: 1.5em;
-			padding: 2rem 5rem;
 			padding-bottom: 5em;
 		}
 
@@ -98,11 +96,9 @@
 
 		img {
 			position: absolute;
-			transform: translateX(20%);
-			max-width: 50em;
-			margin: 11em;
-			margin-top: 11em;
-			padding-bottom: 3em;
+			max-width: 60em;
+			right: 0;
+			bottom: 4rem;
 		}
 
 		h2 {

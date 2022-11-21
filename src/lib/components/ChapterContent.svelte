@@ -16,13 +16,10 @@
 
 <style>
 	section {
-		padding: 1rem;
-		font-family: 'Open Sans', sans-serif;
+		margin: 3rem 0;
 	}
-
 	@media (min-width: 81rem) {
 		section {
-			padding: 2rem 5rem;
 			display: grid;
 			grid-gap: 3rem;
 			grid-template-columns: 15rem auto;
