@@ -10,7 +10,7 @@
 </script>
 
 <Cursor />
-<Header title="CMD Mid-term">
+<Header title="CMD Mid-term" isYellow>
 	<Link type="li" href="/">Some link</Link>
 	<Link type="li" href="/">Some link</Link>
 	<Link type="li" href="/">Some link</Link>

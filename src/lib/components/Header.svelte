@@ -1,10 +1,14 @@
 <script>
 	export let title;
+	export let isYellow;
 
 	let isOpen = false;
 </script>
 
-<nav class:active={isOpen}>
+<nav
+	class:active={isOpen}
+	style={isYellow ? 'background-color: #fff021;' : 'background-color:transparent;'}
+>
 	<a href="/">{title}</a>
 	<ul>
 		<slot />
@@ -19,13 +23,24 @@
 <style>
 	nav {
 		display: flex;
-		max-width: 85rem;
-		width: 90%;
+		width: 100%;
 		justify-content: space-between;
 		align-items: center;
-		border-bottom: 4px solid currentColor;
-		margin: 0 auto;
-		padding: 1rem 0;
+		margin: 0;
+		padding: 1rem 5rem;
+		box-sizing: border-box;
+		position: relative;
+	}
+
+	nav::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		height: 4px;
+		width: calc(100% - 10rem);
+		background-color: #000;
 	}
 
 	:global(a),
@@ -85,6 +100,14 @@
 	@media (max-width: 45rem) {
 		nav.active {
 			color: white;
+		}
+
+		nav {
+			padding: 1rem 1rem;
+		}
+
+		nav::after {
+			width: calc(100% - 2rem);
 		}
 
 		ul {
