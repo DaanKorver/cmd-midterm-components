@@ -16,7 +16,7 @@
 	<Link type="li" href="/">Some link</Link>
 </Header>
 
-<Mainhero />
+<Mainhero title="Communcation and Multimedia Design" image="/assets/hero-image.jpeg"  imageAlt="Woman with laptop" hasButtons="true" text="hwhwhw" />
 
 <TitleTextAsset
 	title="Een titel ofzo"

@@ -2,15 +2,24 @@
 	export let title;
 	export let text;
 	export let image;
+	export let imageAlt;
 	import '../styles/global.css';
 	import '../styles/theme.css';
+	export let hasButtons;
 </script>
 
 <section>
-	<h2>Communication<br /> and Multimedia<br /> Design</h2>
-	<img src="/assets/hero-image.jpeg" alt="woman with laptop" />
-	<p>Midterm</p>
-	<p>Currulicum 2022-2024</p>
+	<h2>{title}</h2>
+	<img src="{image}" alt="{imageAlt}" />
+
+	{#if text}
+	<p>{text}</p>
+	{/if}
+
+	{#if hasButtons}
+	<span>Midterm</span>
+	<span>Currulicum 2022-2024</span>
+	{/if}
 	<hr>
 </section>
 
@@ -33,14 +42,19 @@
 
 	h2 {
 		color: var(--color-black);
+		width: 65%; 
 	}
 
-	p {
+	span {
 		font-size: 1em;
 		margin: 0.4em 0.1em;
 		padding: 1em 3em;
 		background-color: black;
 		color: white;
+	}
+
+	p {
+		font-weight: 100;
 	}
 	h2 {
 		transition: 0.4s cubic-bezier(0.4, 0.4, 0, 1);
@@ -74,7 +88,7 @@
 			font-weight: bold;
 		}
 
-		p {
+		span {
 			font-size: 1.1em;
 			margin: 0.5em;
 			padding: 1em 1.5em;
