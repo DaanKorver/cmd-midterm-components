@@ -7,6 +7,7 @@
 	import Mainhero from '$lib/components/Mainhero.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import FullCarousel from '$lib/components/FullCarousel/FullCarousel.svelte';
 </script>
 
 <div>
@@ -16,6 +17,26 @@
 		<Link type="li" href="/">Some link</Link>
 		<Link type="li" href="/">Some link</Link>
 	</Header>
+
+	<FullCarousel
+		slides={[
+			{
+				heading: 'CMD',
+				subtitle: 'Mid Term',
+				image: 'https://placekitten.com/1500/1500'
+			},
+			{
+				heading: 'CMD',
+				subtitle: 'Mid Term',
+				image: 'https://placekitten.com/1500/1200'
+			},
+			{
+				heading: 'CMD',
+				subtitle: 'Mid Term',
+				image: 'https://placekitten.com/1800/1800'
+			}
+		]}
+	/>
 
 	<Mainhero
 		title="Communcation and Multimedia Design"
