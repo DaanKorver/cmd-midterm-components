@@ -7,10 +7,14 @@
 	import Mainhero from '$lib/components/Mainhero.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import StandardSection from '$lib/components/StandardSection.svelte';
 </script>
 
 <div>
-	<Cursor />
+	<StandardSection />
+
+
+	<!-- <Cursor />
 	<Header title="CMD Mid-term" isYellow>
 		<Link type="li" href="/">Some link</Link>
 		<Link type="li" href="/">Some link</Link>
@@ -36,7 +40,7 @@
 
 	<Carousel />
 
-	<Footer />
+	<Footer /> -->
 </div>
 
 <style>

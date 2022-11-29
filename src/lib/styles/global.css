@@ -20,7 +20,7 @@ img {
 }
 
 body {
-	background-color: var(--color-cmd-yellow);
+	/* background-color: var(--color-cmd-yellow); */
 }
 
 ::-webkit-scrollbar {
