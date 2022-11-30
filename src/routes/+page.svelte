@@ -11,8 +11,26 @@
 </script>
 
 <div>
-	<StandardSection />
-
+	<StandardSection
+		sections={[
+			{
+				title: '1.0 Beoogde leerresultaten',
+				links: [
+					{ text: 'linkje', href: '/' },
+					{ text: 'linkje', href: '/' },
+					{ text: 'linkje', href: '/' }
+				]
+			},
+			{
+				title: '2.0 Beoogde leerresultaten',
+				links: [
+					{ text: 'tof linkje', href: '/' },
+					{ text: 'andere linkje', href: '/' },
+					{ text: 'content much?', href: '/' }
+				]
+			}
+		]}
+	/>
 
 	<!-- <Cursor />
 	<Header title="CMD Mid-term" isYellow>
