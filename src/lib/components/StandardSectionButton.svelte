@@ -8,8 +8,6 @@
 
 <style>
 	button {
-		width: 100%;
-		height: 100%;
 		background: none;
 		outline: none;
 		border: none;
@@ -29,11 +27,6 @@
 		border-left: 1px solid grey;
 		transition: 200ms;
 	}
-
-	li:hover {
-		background-color: rgba(255, 240, 33, 0.4);
-	}
-
 	.active {
 		background-color: var(--color-cmd-yellow);
 	}

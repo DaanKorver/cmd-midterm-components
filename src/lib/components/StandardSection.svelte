@@ -38,13 +38,28 @@
 <style>
 	section {
 		display: grid;
-		grid-template-columns: 20rem 30rem;
-		grid-gap: 2.5rem;
-		margin-top: 3rem;
+		/* grid-template-columns: 20rem 30rem; */
+		/* grid-gap: 2.5rem; */
+		grid-gap: 1rem;
+		/* margin-top: 3rem; */
+		/* place-items: start stretch;	 */
+		padding: 1rem;
+	}
+
+	ol {
+		list-style: none;
 	}
 
 	div {
 		border: 2px solid #000;
 		padding-bottom: 1rem;
+	}
+
+	@media (min-width: 45rem) {
+		section {
+			grid-template-columns: 20rem 30rem;
+			margin-top: 3rem;
+			place-items: start stretch;
+		}
 	}
 </style>
