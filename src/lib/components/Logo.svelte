@@ -1,5 +1,8 @@
+<script>
+    export let title;
+</script>
 
-<h1>CMD Mid-term</h1>
+<h1>{title}</h1>
 
 <style>
     h1{

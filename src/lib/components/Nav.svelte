@@ -1,16 +1,22 @@
 <script>
 	import AnimatedHamburger from "./AnimatedHamburger.svelte";
+	import NavLink from "./NavLink.svelte";
 	import { fly } from "svelte/transition";
 	export let open = false;
 	export let onClick = () => {
 		open = !open;
 	};
 </script>
+
     <ul>
-		<li>Beoogde leerresultaten</li>
+		<NavLink  link='/' text='Beoogde leerresultaten'  />
+		<NavLink link='/' text=' Onderwijsleeromgeving'  />
+		<NavLink link='/' text='Toetsing'  />
+		<NavLink link='/' text='Beoogde leerresultaten'  />
+		<!-- <li>Beoogde leerresultaten</li>
 		<li>Onderwijsleeromgeving</li>
 		<li>Toetsing</li>
-		<li>Gerealiseerde Leerresultaten</li>
+		<li>Gerealiseerde Leerresultaten</li> -->
 	</ul>
 	<AnimatedHamburger {open} {onClick} />
     {#if open}

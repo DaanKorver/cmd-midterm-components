@@ -4,7 +4,8 @@
 </script>
 
 <header>
-	<Logo/>
+	<Logo title="CMD-Midterm"
+	/>
 	<Nav/>
 </header>
 

@@ -10,7 +10,7 @@
 	import HeaderV2 from '$lib/components/HeaderV2.svelte';
 </script>
 
-<HeaderV2/>
+<HeaderV2 title="whwh" />
 
 <!-- <div>
 	<Cursor />
