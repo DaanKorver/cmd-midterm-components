@@ -7,11 +7,14 @@
 	import Mainhero from '$lib/components/Mainhero.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import HeaderV2 from '$lib/components/HeaderV2.svelte';
 	import FullCarousel from '$lib/components/FullCarousel/FullCarousel.svelte';
 	import { expoOut } from 'svelte/easing';
 </script>
 
-<div>
+<HeaderV2 title="whwh" />
+
+<!-- <div>
 	<Cursor />
 	<Header title="CMD Mid-term" isYellow>
 		<Link type="li" href="/">Some link</Link>
@@ -63,7 +66,7 @@
 	<Carousel />
 
 	<Footer />
-</div>
+</div> -->
 
 <style>
 	div {
