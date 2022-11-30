@@ -4,7 +4,7 @@
 	export let facing = 'right';
 </script>
 
-<div on:click style="transform: rotate({facing === 'right' ? 0 : 180}deg)" {...$$restProps}>
+<button on:click style="transform: rotate({facing === 'right' ? 0 : 180}deg)" {...$$restProps}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		{width}
@@ -16,10 +16,10 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg
 	>
-</div>
+</button>
 
 <style>
-	div {
+	button {
 		display: flex;
 		cursor: pointer;
 		padding: 1rem;
@@ -27,13 +27,25 @@
 		color: var(--color-cmd-yellow);
 		position: absolute;
 		z-index: 10;
+		outline: none;
+		border: 1px solid transparent;
+	}
+
+	button:focus-visible {
+		border-color: var(--color-cmd-yellow);
 	}
 
 	svg {
 		transition: 0.2s transform ease-out;
 	}
 
-	div:active svg {
+	button:active svg {
 		transform: scale(0.7);
+	}
+
+	@media (max-width: 40rem) {
+		button {
+			bottom: 0;
+		}
 	}
 </style>

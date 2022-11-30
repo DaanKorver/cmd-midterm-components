@@ -15,10 +15,18 @@
 <style>
 	.slide {
 		display: block;
-		width: var(--slide-width);
-		height: var(--slide-height);
+		width: 100%;
+		height: 100%;
 		position: relative;
-		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: clamp(1.5rem, 7vw, 4rem);
+	}
+
+	p {
+		font-size: clamp(1rem, 4vw, 1.25rem);
+		max-width: 30em;
 	}
 
 	.slide::after {
@@ -35,20 +43,28 @@
 	}
 
 	.content {
-		width: 100%;
+		width: 80%;
 		height: 100%;
 		position: absolute;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		flex-direction: column;
 		color: var(--color-white);
 		z-index: 100;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.slide img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+
+	@media (max-width: 40rem) {
+		.content {
+			width: 90%;
+		}
 	}
 </style>

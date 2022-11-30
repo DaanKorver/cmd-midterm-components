@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { expoInOut } from 'svelte/easing';
+	import { quadInOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
 	import CarouselButton from './CarouselButton.svelte';
 	import Slide from './Slide.svelte';
@@ -11,18 +10,35 @@
 		subtitle: string;
 	}
 
-	export let slides: Slide[];
-	export let duration = 400;
+	interface Transition {
+		duration: number;
+		easing: (t: number) => number;
+	}
 
-	let slidesEl: HTMLUListElement;
+	const defaultTransition: Transition = { duration: 300, easing: quadInOut };
+
+	export let slides: Slide[];
+	export let automatic = false;
+	export let automaticDuration = 5000;
+	export let transition: Transition = defaultTransition;
+
+	const xTransition = { ...defaultTransition, ...transition };
 
 	const clones = 2;
 	let index = 0;
 	const shiftAmount = 100 / (slides.length + clones);
-	const slideOffset = tweened(-shiftAmount, { easing: expoInOut, duration });
+	const slideOffset = tweened(-shiftAmount, xTransition);
 	let canShift = true;
+	let interval: ReturnType<typeof setInterval> | null = null;
 
-	function shift(direction: -1 | 1) {
+	if (automatic) {
+		interval = setInterval(() => {
+			shift(1, true);
+		}, automaticDuration);
+	}
+
+	function shift(direction: -1 | 1, auto: boolean = false, amount: number = 1) {
+		if (!auto && interval) clearInterval(interval);
 		if (!canShift) return;
 		canShift = false;
 		if (direction == 1) {
@@ -34,7 +50,12 @@
 		}
 		setTimeout(() => {
 			checkIndex();
-		}, duration + 100);
+			if (!auto && automatic) {
+				interval = setInterval(() => {
+					shift(1, true);
+				}, automaticDuration);
+			}
+		}, xTransition.duration + 100);
 	}
 
 	function checkIndex() {
@@ -56,7 +77,6 @@
 	<div class="wrapper">
 		{#if slides}
 			<ul
-				bind:this={slidesEl}
 				class="slides"
 				style="width: calc({slides.length +
 					clones} * var(--slide-width)); transform: translateX(calc({$slideOffset}% ))"
@@ -96,6 +116,7 @@
 		position: relative;
 		width: var(--slide-width);
 		height: var(--slide-height);
+		min-height: 550px;
 		background-color: transparent;
 		z-index: 1;
 	}
