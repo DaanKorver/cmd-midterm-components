@@ -44,6 +44,7 @@
 		left: 0;
 	}
     nav > a {
+		margin: .5em;
 		font-size: 1.5em;
 		text-decoration: none;
 		color: white;
@@ -63,7 +64,7 @@
 
     li{
         display: flex;
-        flex-direction: row;
+     margin-bottom: .5em;
     }
 }
 </style>
