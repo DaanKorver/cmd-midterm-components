@@ -38,11 +38,7 @@
 <style>
 	section {
 		display: grid;
-		/* grid-template-columns: 20rem 30rem; */
-		/* grid-gap: 2.5rem; */
 		grid-gap: 1rem;
-		/* margin-top: 3rem; */
-		/* place-items: start stretch;	 */
 		padding: 1rem;
 	}
 
@@ -57,9 +53,17 @@
 
 	@media (min-width: 45rem) {
 		section {
-			grid-template-columns: 20rem 30rem;
-			margin-top: 3rem;
+			grid-template-columns: auto auto;
+			margin-top: 3rem; 
 			place-items: start stretch;
+			grid-gap: 1.5rem;
+		}
+	}
+
+	@media (min-width: 70rem) {
+		section {
+			grid-template-columns: 20fr 30fr;
+			grid-gap: 2.5rem;
 		}
 	}
 </style>

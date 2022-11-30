@@ -11,7 +11,7 @@
 		background: none;
 		outline: none;
 		border: none;
-		padding: 1rem 2rem;
+		padding: 1rem;
 		font-weight: 600;
 		font-size: 1rem;
 		cursor: pointer;
@@ -29,5 +29,11 @@
 	}
 	.active {
 		background-color: var(--color-cmd-yellow);
+	}
+
+	@media (min-width: 70rem) {
+		button {
+			padding: 1rem 2rem;
+		}
 	}
 </style>
