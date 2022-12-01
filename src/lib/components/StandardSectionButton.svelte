@@ -9,7 +9,6 @@
 <style>
 	button {
 		background: none;
-		outline: none;
 		border: none;
 		padding: 1rem;
 		font-weight: 600;
@@ -17,9 +16,9 @@
 		cursor: pointer;
 	}
 
-	button:focus {
+	/* button:focus {
 		border: 2px solid #000;
-	}
+	} */
 
 	li:last-of-type {
 		border-bottom: 1px solid grey;
