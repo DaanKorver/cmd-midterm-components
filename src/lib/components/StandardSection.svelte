@@ -48,7 +48,6 @@
 
 	div {
 		border: 2px solid #000;
-		padding-bottom: 1rem;
 	}
 
 	@media (min-width: 45rem) {

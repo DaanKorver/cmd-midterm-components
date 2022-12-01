@@ -8,16 +8,14 @@
 	export let title: string;
 </script>
 
-<div>
-	<h2>{title}</h2>
-	<ol>
-		{#each links as link}
-			<li>
-				<a href={link.href}>{link.text}</a>
-			</li>
-		{/each}
-	</ol>
-</div>
+<h2>{title}</h2>
+<ol>
+	{#each links as link}
+		<li>
+			<a href={link.href}>{link.text}</a>
+		</li>
+	{/each}
+</ol>
 
 <style>
 	h2 {
@@ -26,16 +24,13 @@
 		font-size: 1.25rem;
 	}
 
-	div ol {
-		margin-top: 0.5rem;
-	}
-
 	div ol li {
 		padding: 0.15rem 1rem;
 	}
 
 	ol {
 		list-style-position: inside;
+		margin: 0.75rem 0;
 	}
 
 	@media (min-width: 70rem) {
