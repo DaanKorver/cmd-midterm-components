@@ -17,7 +17,7 @@
 	export let sections: SectionType[] = [];
 </script>
 
-<section>
+<section {...$$restProps}>
 	<ol>
 		{#each sections as section, i}
 			<StandardSectionButton active={index === i} on:click={() => (index = i)}
@@ -53,7 +53,7 @@
 	@media (min-width: 45rem) {
 		section {
 			grid-template-columns: auto auto;
-			margin-top: 3rem; 
+			margin-top: 3rem;
 			place-items: start stretch;
 			grid-gap: 1.5rem;
 		}

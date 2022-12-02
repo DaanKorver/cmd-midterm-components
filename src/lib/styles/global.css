@@ -19,10 +19,6 @@ img {
 	width: 100%;
 }
 
-body {
-	/* background-color: var(--color-cmd-yellow); */
-}
-
 ::-webkit-scrollbar {
 	width: 10px;
 }

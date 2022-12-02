@@ -3,7 +3,7 @@
 </script>
 
 <li class={active ? 'active' : null}>
-	<button type='button' on:click><slot /></button>
+	<button type="button" on:click><slot /></button>
 </li>
 
 <style>
@@ -15,10 +15,6 @@
 		font-size: 1rem;
 		cursor: pointer;
 	}
-
-	/* button:focus {
-		border: 2px solid #000;
-	} */
 
 	li:last-of-type {
 		border-bottom: 1px solid grey;
