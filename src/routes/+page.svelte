@@ -8,6 +8,10 @@
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import StandardSection from '$lib/components/StandardSection.svelte';
+	import HeaderV2 from '$lib/components/HeaderV2.svelte';
+	import FullCarousel from '$lib/components/FullCarousel/FullCarousel.svelte';
+	import { expoOut } from 'svelte/easing';
+</script>
 </script>
 
 <div>
@@ -59,11 +63,32 @@
 	/>
 
 	<!-- <Cursor />
-	<Header title="CMD Mid-term" isYellow>
-		<Link type="li" href="/">Some link</Link>
-		<Link type="li" href="/">Some link</Link>
-		<Link type="li" href="/">Some link</Link>
-	</Header>
+
+  <HeaderV2 title="whwh" />
+
+	<FullCarousel
+		automatic
+		automaticDuration={3500}
+		transition={{ duration: 1000, easing: expoOut }}
+		slides={[
+			{
+				heading: 'CMD Mid-term',
+				subtitle:
+					'Opleiding van de HvA. Zo vet cool dit wil je toch gewoon doen. Jij gaat nu CMD doen of anders',
+				image: 'https://placekitten.com/1500/1500'
+			},
+			{
+				heading: 'Creatieve vrijheid',
+				subtitle: 'Maak websites enzo bro',
+				image: 'https://placekitten.com/1500/1200'
+			},
+			{
+				heading: 'Toffe internet dingetjes',
+				subtitle: 'Memes enzo, die zijn toch cool?',
+				image: 'https://placekitten.com/1800/1800'
+			}
+		]}
+	/>
 
 	<Mainhero
 		title="Communcation and Multimedia Design"
