@@ -14,16 +14,21 @@
 		font-weight: 600;
 		font-size: 1rem;
 		cursor: pointer;
+		width: 100%;
+		text-align: left;
+	}
+	li:not(.active):hover {
+		background-color: rgba(255, 240, 33, 0.5);
 	}
 
 	li:last-of-type {
-		border-bottom: 1px solid grey;
+		border-bottom: 2px solid var(--color-black);
 	}
 
 	li {
-		border-top: 1px solid grey;
-		border-right: 1px solid grey;
-		border-left: 1px solid grey;
+		border-top: 2px solid var(--color-black);
+		border-right: 2px solid var(--color-black);
+		border-left: 2px solid var(--color-black);
 		transition: 200ms;
 	}
 	.active {

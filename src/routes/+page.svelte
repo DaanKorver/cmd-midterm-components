@@ -12,7 +12,6 @@
 	import FullCarousel from '$lib/components/FullCarousel/FullCarousel.svelte';
 	import { expoOut } from 'svelte/easing';
 </script>
-</script>
 
 <div>
 	<StandardSection
