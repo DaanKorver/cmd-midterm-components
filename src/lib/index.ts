@@ -8,4 +8,4 @@ export { default as FullCarousel } from './components/FullCarousel/FullCarousel.
 export { default as Header } from './components/Header.svelte';
 export { default as Link } from './components/Link.svelte';
 export { default as MainHero, default as TitleTextAsset } from './components/Mainhero.svelte';
-export { default as StandardSectionButton } from './components/StandardSectionButton.svelte';
+export { default as StandardSection } from './components/StandardSection.svelte';
